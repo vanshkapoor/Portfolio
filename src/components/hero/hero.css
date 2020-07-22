@@ -2,6 +2,30 @@
   width: 80%;
   margin: auto;
 }
+.boxesimg {
+  opacity: 0.3;
+  position: absolute;
+  /* top: -4px; */
+  animation: boxmove infinite 10s linear;
+}
+
+.boxesimg2 {
+  opacity: 0.6;
+  position: absolute;
+  /* top: -4px; */
+}
+
+@keyframes boxmove {
+  0% {
+    width: 95%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 95%;
+  }
+}
 
 @media screen and (max-width: 700px) {
   .myimg {
@@ -9,5 +33,12 @@
   }
   .cont {
     width: 85%;
+  }
+}
+
+@media screen and (max-width: 782px) {
+  .boxesimg,
+  .boxesimg2 {
+    display: none;
   }
 }

@@ -2,8 +2,12 @@ html,
 body {
   height: 100%;
   margin: 0;
+  /* overflow-x: hidden; */
 }
 
+html {
+  overflow-x: hidden;
+}
 .greybg {
   background-color: whitesmoke;
   height: 100vh;
@@ -31,8 +35,8 @@ body {
 }
 .footerdiv {
   margin-bottom: 0px;
-  background: black;
-  color: whitesmoke;
+  background: whitesmoke;
+  color: black;
   position: absolute;
   width: -webkit-fill-available;
   text-align: center;
