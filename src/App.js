@@ -18,9 +18,9 @@ function App() {
         <Detailer />
         <i class="fas fa-chevron-down movedown pb-4 fontsz-15"></i>
       </div>
-      <div className="footerdiv">
+      {/* <div className="footerdiv">
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 }

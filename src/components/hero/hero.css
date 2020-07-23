@@ -6,7 +6,7 @@
   opacity: 0.3;
   position: absolute;
   /* top: -4px; */
-  animation: boxmove infinite 10s linear;
+  animation: boxmove infinite 5s linear;
 }
 
 .boxesimg2 {
