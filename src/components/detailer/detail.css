@@ -42,7 +42,7 @@ ul.timeline > li:before {
   display: inline-block;
   position: absolute;
   border-radius: 30%;
-  border: 3px solid steelblue;
+  border: 3px solid grey;
   left: 20px;
   width: 20px;
   height: 20px;
@@ -56,4 +56,61 @@ ul.timeline > li:before {
   width: fit-content;
   padding: 0px 5px 0px 5px;
   border-radius: 6px;
+}
+
+.aboutpara {
+  background: #efefef;
+  padding: 30px 30px 26px 35px;
+  font-size: 1.3rem;
+}
+
+.aboutpara2 {
+  background: #efefef;
+  padding: 10px 15px 10px 15px;
+  font-size: 1.1rem;
+}
+
+.education {
+  background: whitesmoke;
+  padding: 4px;
+}
+
+.ic {
+  color: grey;
+}
+.projects {
+  border: 1px solid #aaaaaa;
+  /* border-radius: 4px; */
+  padding: 10px;
+  background: whitesmoke;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.projectimg {
+  transition: 0.4s;
+  filter: grayscale(1);
+}
+
+.projects:hover .projectimg {
+  filter: grayscale(0);
+}
+
+.projects:hover {
+  /* border: none; */
+  box-shadow: 3px 3px 1px 2px gainsboro;
+}
+
+.blackbutton {
+  color: white;
+  background: black;
+  border: none;
+  padding: 3px 6px 3px 6px;
+}
+
+.sticknav {
+  width: fit-content;
+  position: sticky;
+  top: 10px;
+  background: white;
+  z-index: 3;
 }

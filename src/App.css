@@ -41,3 +41,9 @@ html {
   width: -webkit-fill-available;
   text-align: center;
 }
+
+.dash {
+  width: 37px;
+  height: 10px;
+  background: #a5a5a5;
+}
