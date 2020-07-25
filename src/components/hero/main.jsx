@@ -8,15 +8,7 @@ const Hero = () => {
         <img width="50px" src={require("../../V1.png")} />
       </h3>
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-
-      <div>
+      <div className="makeitcentre">
         <div className="row">
           <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <p className="mb-0" style={{ fontSize: "1.2rem" }}>
@@ -35,10 +27,28 @@ const Hero = () => {
             >
               Download Resume
             </button>
-            <div className="d-flex pt-2" style={{ color: "grey" }}>
-              <i className="fab fa-twitter fontsz-15" />
-              <i className="fab fa-github pl-4 fontsz-15" />
-              <i className="fab fa-linkedin pl-4 fontsz-15" />
+            <div className="d-flex pt-2">
+              <a
+                href="https://twitter.com/vansh_Kapoor_"
+                target="_blank"
+                style={{ color: "grey" }}
+              >
+                <i className="fab fa-twitter fontsz-15" />
+              </a>
+              <a
+                href="https://github.com/vanshkapoor"
+                target="_blank"
+                style={{ color: "grey" }}
+              >
+                <i className="fab fa-github pl-4 fontsz-15" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/vansh-kapoor-62a938169/"
+                target="_blank"
+                style={{ color: "grey" }}
+              >
+                <i className="fab fa-linkedin pl-4 fontsz-15" />
+              </a>
             </div>
           </div>
 

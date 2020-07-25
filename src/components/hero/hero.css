@@ -15,6 +15,10 @@
   /* top: -4px; */
 }
 
+.makeitcentre {
+  margin-top: 15%;
+}
+
 @keyframes boxmove {
   0% {
     width: 95%;

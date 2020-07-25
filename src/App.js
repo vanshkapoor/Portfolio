@@ -10,11 +10,12 @@ function App() {
     <div className="App">
       <div className="greybg">
         <Hero />
-        <a href="#detailer">
-          <i class="fas fa-chevron-down movedown pb-4 fontsz-15"></i>
+        <a href="#info">
+          {" "}
+          <i className="fas fa-chevron-down movedown pb-4 fontsz-15"></i>
         </a>
       </div>
-      <div className="whitebg">
+      <div id="info" className="whitebg">
         <Detailer />
         <i class="fas fa-chevron-down movedown pb-4 fontsz-15"></i>
       </div>
