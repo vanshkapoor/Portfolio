@@ -8,11 +8,13 @@
 .active {
   color: black;
   cursor: pointer;
-  border-bottom: 2px solid;
+  font-weight: bold;
+  border-bottom: 4px solid;
 }
 
 .nactive {
   cursor: pointer;
+  font-weight: bold;
   color: grey;
 }
 .nactive:hover {
@@ -55,7 +57,7 @@ ul.timeline > li:before {
   background-color: #ffffff1f;
   width: fit-content;
   padding: 0px 5px 0px 5px;
-  border-radius: 6px;
+  /* border-radius: 6px; */
 }
 
 .aboutpara {

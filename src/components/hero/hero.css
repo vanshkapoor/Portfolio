@@ -19,6 +19,17 @@
   margin-top: 15%;
 }
 
+.myimg {
+  margin-top: -45px;
+  filter: saturate(0.3);
+  box-shadow: 9px 7px 1px 4px grey;
+  transition: 0.5s;
+}
+.myimg:hover {
+  filter: saturate(1);
+  box-shadow: 13px 14px 1px 4px grey;
+}
+
 @keyframes boxmove {
   0% {
     width: 95%;

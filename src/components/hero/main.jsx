@@ -20,26 +20,16 @@ const Hero = () => {
             <h3 style={{ color: "#616161" }} className="mt-0">
               A Full Stack Developer | Programmer
             </h3>
-            <button
-              href="#detailer"
-              className="mt-2 mb-2 pl-4 pr-4"
-              style={{ fontSize: "1.2rem" }}
-            >
-              Download Resume
+            <button className="mt-2 mb-2 pl-4 pr-4" style={{ fontSize: "1.2rem" }}>
+              <a href={require("../../resume.pdf")} download="CV" style={{ color: "black" }}>
+                Download Resume
+              </a>
             </button>
             <div className="d-flex pt-2">
-              <a
-                href="https://twitter.com/vansh_Kapoor_"
-                target="_blank"
-                style={{ color: "grey" }}
-              >
+              <a href="https://twitter.com/vansh_Kapoor_" target="_blank" style={{ color: "grey" }}>
                 <i className="fab fa-twitter fontsz-15" />
               </a>
-              <a
-                href="https://github.com/vanshkapoor"
-                target="_blank"
-                style={{ color: "grey" }}
-              >
+              <a href="https://github.com/vanshkapoor" target="_blank" style={{ color: "grey" }}>
                 <i className="fab fa-github pl-4 fontsz-15" />
               </a>
               <a
@@ -48,6 +38,9 @@ const Hero = () => {
                 style={{ color: "grey" }}
               >
                 <i className="fab fa-linkedin pl-4 fontsz-15" />
+              </a>
+              <a href="mailto:vanshkapoorvk7@gmail.com?subject=To Hire" style={{ color: "grey" }}>
+                <i class="fas fa-envelope pl-4 fontsz-15"></i>
               </a>
             </div>
           </div>
@@ -60,7 +53,8 @@ const Hero = () => {
               width="50%"
               className="myimg"
               alt="me"
-              src="https://vanshkapoor.github.io/pic.jpg"
+              src={require("../../me.jpeg")}
+              // src="https://vanshkapoor.github.io/pic.jpg"
             />
             {/* <br /> */}
             <img src={require("../../boxes.png")} width="300px" className="boxesimg2" />

@@ -4,14 +4,14 @@ import "./App.css";
 import Hero from "./components/hero/main";
 import Footer from "./components/Footer/footer";
 import Detailer from "./components/detailer/detailer";
+// import { Link } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <div className="greybg">
         <Hero />
-        <a href="#info">
-          {" "}
+        <a href="/#info">
           <i className="fas fa-chevron-down movedown pb-4 fontsz-15"></i>
         </a>
       </div>
