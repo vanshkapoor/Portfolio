@@ -8,6 +8,53 @@
   /* top: -4px; */
   animation: boxmove infinite 5s linear;
 }
+.header-name{
+  background-color: white;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+  border: 3px solid black;
+  padding: 8px 12px 8px 12px;
+  font-Size: 18px;
+  font-Weight: bold;
+  position: relative;
+  text-decoration-line: none !important; 
+}
+
+.header-name span {
+  position: relative;
+  z-index: 2;
+  text-decoration-line: none; 
+  color: black;
+}
+
+.header-name:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--text-primary);
+  transition: all .35s;
+  text-decoration-line: none; 
+}
+
+.header-name:hover:after{
+  width: 100%;
+}
+
+.downloadBtn:hover{
+  transition: 0.3s;
+  box-shadow: 2px 2px 0px 0px black;
+}
+.social-icons{
+  color: grey;
+}
+.social-icons:hover{
+  transition: 0.3s;
+  color: var(--text-secondary);
+}
 
 .boxesimg2 {
   opacity: 0.6;
@@ -18,16 +65,19 @@
 .makeitcentre {
   margin-top: 15%;
 }
+.centreAbout{
+  margin-top: 5%;
+}
 
 .myimg {
-  margin-top: -45px;
-  filter: saturate(0.3);
-  box-shadow: 9px 7px 1px 4px grey;
+  margin-top: -60px;
+  /* filter: saturate(0.3); */
+  box-shadow: 9px 7px 1px 4px #495057;
   transition: 0.5s;
 }
 .myimg:hover {
-  filter: saturate(1);
-  box-shadow: 13px 14px 1px 4px grey;
+  /* filter: saturate(1); */
+  box-shadow: 5px 6px 0px 0px #495057;
 }
 
 @keyframes boxmove {
@@ -49,11 +99,30 @@
   .cont {
     width: 85%;
   }
+  .makeitcentre {
+    margin-top: 40%;
+  }
 }
 
 @media screen and (max-width: 782px) {
   .boxesimg,
   .boxesimg2 {
     display: none;
+  }
+}
+
+.animateShow {
+  opacity: 0;
+  animation: FadeIn 1s ease-in-out forwards;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes FadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
   }
 }

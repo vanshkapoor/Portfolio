@@ -61,9 +61,11 @@ ul.timeline > li:before {
 }
 
 .aboutpara {
-  background: #efefef;
+  /* background: #efefef; */
   padding: 30px 30px 26px 35px;
-  font-size: 1.3rem;
+  font-size: 1.1em;
+  text-align: justify;
+  color: #c4c4c4;
 }
 
 .aboutpara2 {

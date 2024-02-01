@@ -9,8 +9,8 @@ body {
 html {
   overflow-x: hidden;
 }
-.greybg {
-  background-color: whitesmoke;
+.hero-background {
+  background-color: var(--background-primary);
   height: 100vh;
 }
 .whitebg {
@@ -31,6 +31,9 @@ html {
 .fontsz-15 {
   font-size: 2rem;
 }
+.fs14{
+  font-size: 1.4rem;
+}
 .fontsz-13 {
   font-size: 1rem;
 }
@@ -47,4 +50,64 @@ html {
   width: 37px;
   height: 10px;
   background: #a5a5a5;
+}
+
+.visible{
+  transition: 0.4s;
+  display: block;
+}
+.hidden{
+  transition: 0.4s;
+  display: none;
+}
+.nav-links {
+  justify-content: end;
+  flex: 1;
+  margin: auto;
+}
+.nav-links-bottom {
+  justify-content: center;
+}
+.bottomDiv{
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #495057;
+  background: #1d1f21;
+  width: -webkit-fill-available;
+  padding-bottom: 12px;
+  padding-top: 14px;
+}
+.bottomFixed{
+  position: fixed !important;
+  bottom: 0px;
+}
+.borderbottom{
+  border-bottom: 4px solid var(--text-primary) !important;
+}
+.clicks{
+  cursor: pointer;
+}
+
+body{
+  background: var(--background-primary);
+}
+
+.showOnMobile{
+  display: none;
+}
+
+.showOnDesktop{
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .showOnMobile{
+    display: block;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .showOnDesktop{
+    display: block;
+  }
 }

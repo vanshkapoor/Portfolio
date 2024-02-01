@@ -1,0 +1,25 @@
+:root {
+    --background-primary: #1d1f21;
+    --background-secondary: #1d1f21;
+    --text-primary: #007bff;
+    --text: #ffffff;
+    --text-off: #b0b0b0;
+    --text-primary-offset: #ff3d6a;
+    --text-secondary: #ffffff;
+}
+
+.primary-text{
+    color: var(--text-primary);
+}
+
+.off-text{
+    color: var(--text-off);
+}
+
+.secondary-text{
+    color: var(--text-secondary);
+}
+
+body{
+    color: var(--text);
+}

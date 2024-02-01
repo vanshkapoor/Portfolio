@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./detail.css";
 import Footer from "../Footer/footer";
+import { education } from "../assets/education";
 
 const Detailer = () => {
   const [section, setSection] = useState("1");
@@ -12,68 +13,35 @@ const Detailer = () => {
   return (
     <div>
       <br />
-      <div className="d-flex mx-auto mt-4 sticknav">
-        <p
-          onClick={() => changeSection("1")}
-          className={
-            section === "1" ? "pl-2 pt-2 pb-2 fz-13 active" : "pl-2 pt-2 pb-2 fz-13 nactive"
-          }
-        >
-          ABOUT ME
-        </p>
-        <p
-          onClick={() => changeSection("2")}
-          className={
-            section === "2" ? "pl-2 pt-2 pb-2 fz-13 active" : "pl-2 pt-2 pb-2 fz-13 nactive"
-          }
-        >
-          EDU & SKILLS
-        </p>
-        <p
-          onClick={() => changeSection("3")}
-          className={
-            section === "3" ? "pl-2 pt-2 pb-2 fz-13 active" : "pl-2 pt-2 pb-2 fz-13 nactive"
-          }
-        >
-          PROJECTS
-        </p>
-        <p
-          onClick={() => changeSection("4")}
-          className={
-            section === "4" ? "pl-2 pt-2 pb-2 fz-13 active" : "pl-2 pt-2 pb-2 fz-13 nactive"
-          }
-        >
-          EXPERIENCE
-        </p>
-      </div>
+      <br />
+      <br />
+      <Aboutme />
       <br />
       <br />
       <br />
-
-      <div className="cont">
-        {section === "1" ? (
-          <Aboutme />
-        ) : section === "2" ? (
-          <Edu />
-        ) : section === "3" ? (
-          <Projects />
-        ) : section === "4" ? (
-          <Experience />
-        ) : (
-          <p>how did you get here</p>
-        )}
-      </div>
+      <br />
+      <Experience />
+      {/* <br />
       <br />
       <br />
+      <br />
+      <Edu />
+      <br />
+      <br />
+      <br />
+      <br />
+      <Projects />
+      <br />
+      <br /> */}
     </div>
   );
 };
 
-const Aboutme = () => {
+export const Aboutme = () => {
   return (
-    <div>
+    <div className="container">
       <div className="row">
-        <div className="col-lg-6">
+       {/* <div className="col-lg-6">
           <p style={{ border: "2px solid #efefef", padding: "25px 20px 10px 24px" }}>
             <div>
               <h3>
@@ -85,7 +53,7 @@ const Aboutme = () => {
             </div>
             <br />
             <p>
-              <span className="font-weight-bold pr-2">AGE:</span> 21{" "}
+              <span className="font-weight-bold pr-2">AGE:</span> 25{" "}
             </p>
             <p>
               {" "}
@@ -95,55 +63,52 @@ const Aboutme = () => {
               <span className="font-weight-bold pr-2">EMAIL:</span> vanshkapoorvk7@gmail.com{" "}
             </p>
             <p>
-              <span className="font-weight-bold pr-2"> ADDRESS:</span>PitamPura, Delhi{" "}
+              <span className="font-weight-bold pr-2"> ADDRESS:</span>Gurgaon, sec-49{" "}
             </p>
           </p>
-          <p className="aboutpara2">
-            <div>
-              <h3>
-                <b>
-                  <i class="ic fas fa-spa pr-2"></i>Hobbies
-                </b>
-              </h3>
-              <div className="dash"></div>
-            </div>
-            <br />
-            <p>
-              <ul>
-                <li>
-                  <span className="text-muted">Sports:</span>Actively takes part in
-                  football.Participated in many inter-school football competitions and zonal
-                  level.recently won first prize in college sports meet
-                </li>
-                <li>
-                  <span className="text-muted">Dance:</span>Was in the school dance team and have
-                  won many inter-house and inter-school competitions and was 3rd in zonal level
-                  dance competition.
-                </li>
-                <li>
-                  Ocassionaly <span className="text-muted">blogging</span> on my platform :{" "}
-                  <a href="https://www.journaldev.netlify.com" style={{ color: "black" }}>
-                    JournalDev
-                  </a>
-                </li>
-              </ul>
-            </p>
-          </p>
-        </div>
-        <div className="col-lg-6">
-          <p className="aboutpara">
-            <span className="font-weight-bold text-muted" style={{ fontSize: "2rem" }}>
+        </div>  */}
+        <div className="col-lg-12">
+          <p className="aboutpara animateShow">
+            <span className="font-weight-bold secondary-text" style={{ fontSize: "2rem" }}>
               {" "}
-              Hii!
+              About Me!
             </span>{" "}
-            I am Vansh kapoor and am currently pursuing B.Tech from Bharati VidyaPeeth's College of
-            Engineering under GGSIPU.I am a web developer by passion and profession and have an urge
-            or madness to learn to explore each and everything language. I have heard a lot from my
-            colleague that it's impossible to learn everything and all I want is to to prove them
-            wrong. This thought drives me to explore everything from C++,web,ML,AI to AR and
-            blockchain. I like to meet people and gain experience and loves to work in a
-            professional environment
+            <br />
+            <br />
+            Hii! I'm currently working as an Application Developer Consultant at <span className="primary-text">Thoughtworks</span> where I'm working with some of the great minds following
+            extensive coding practices to build production ready applications and processes.
+            <br/>
+            <br />
+            I have done my Bachelor in Computer Science and Engineering from <span className="primary-text">Bharati Vidyapeeth IPU</span>.
+            <br />
+            <br />
+            I have diverse experience in multiple startups across diverse sectors with proficiency in the end-to-end development,
+            Backend in Nodejs and seamless UI/UX in ReactJs and React Native. Following the best software development practices like TDD, DDD, clean coding and always up for more challenging opportunities.
           </p>
+          {/* <div
+            className="mt-0 pt-4 pl-2 d-flex animateShow"
+            style={{ position: "relative", top: "18px", flexWrap: "wrap" }}
+          >
+            <p className="skills mr-2">Competitive coding</p>
+            <p className="skills mr-2">Data structures</p>
+            <p className="skills mr-2">Javascript</p>
+            <p className="skills mr-2">ReactJS</p>
+            <p className="skills mr-2">NodeJS</p>
+            <p className="skills mr-2">MySQL</p>
+            <p className="skills mr-2">MongoDB</p>
+            <p className="skills mr-2">Appscripts</p>
+            <p className="skills mr-2">Github</p>
+            <p className="skills mr-2">Python</p>
+            <p className="skills mr-2">Machine Learning</p>
+            <p className="skills mr-2">Sklearn</p>
+            <p className="skills mr-2">GCP</p>
+            <p className="skills mr-2">DNS</p>
+            <p className="skills mr-2">Flutter UI</p>
+            <p className="skills mr-2">UI/UX</p>
+            <p className="skills mr-2">Decentralised Apps</p>
+            <p className="skills mr-2">O.S basics</p>
+            <p className="skills mr-2">UI/UX</p>
+          </div> */}
         </div>
       </div>
     </div>
@@ -152,7 +117,7 @@ const Aboutme = () => {
 
 const Edu = () => {
   return (
-    <div>
+    <div className="container">
       <div className="row">
         <div className="col-lg-6">
           <div id="education mt-2">
@@ -166,30 +131,17 @@ const Edu = () => {
             <div className="container education">
               <div className="col-md-6">
                 <ul className="timeline" style={{ marginTop: "50px" }}>
-                  <li>
-                    <p className="text-muted">
-                      <i class="far fa-clock pr-1"></i> year: 2014-15
-                    </p>
-                    <h4>X CLASS</h4>
-                    <h5>Lancer's Convent School</h5>
-                    <p>CBSE BOARDS CGPA: 9.6</p>
-                  </li>
-                  <li>
-                    <p className="text-muted">
-                      <i class="far fa-clock pr-1"></i> year: 2016-17
-                    </p>
-                    <h4>XII CLASS</h4>
-                    <h5>Lancer's Convent Sr. Secondary School</h5>
-                    <p>CBSE BOARDS : 94%</p>
-                  </li>
-                  <li>
-                    <p className="text-muted">
-                      <i class="far fa-clock pr-1"></i> year: 2017-2021
-                    </p>
-                    <h4>COLLEGE</h4>
-                    <h5>I.P UNIVERSITY : Bharati Vidhyapeeth's College of Engineering</h5>
-                    <p>Cummilative CGPA:8.8</p>
-                  </li>
+                  {education.map(ed => (
+                        <li>
+                        <p className="text-muted">
+                          <i class="far fa-clock pr-1"></i> year: {ed.year}
+                        </p>
+                        <h4>{ed.type}</h4>
+                        <h5>{ed.name}</h5>
+                        <p>{ed.percentage}</p>
+                      </li>
+                  ))}
+
                 </ul>
               </div>
             </div>
@@ -282,7 +234,7 @@ const Edu = () => {
 
 const Projects = () => {
   return (
-    <div>
+    <div className="container">
       <h3>
         <b>
           <i class="fas fa-project-diagram pr-2 ic"></i>Live Projects
