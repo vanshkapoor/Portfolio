@@ -41,32 +41,6 @@ export const Aboutme = () => {
   return (
     <div className="container">
       <div className="row">
-       {/* <div className="col-lg-6">
-          <p style={{ border: "2px solid #efefef", padding: "25px 20px 10px 24px" }}>
-            <div>
-              <h3>
-                <b>
-                  <i class="ic fas fa-info-circle pr-2"></i>Basic Info{" "}
-                </b>
-              </h3>
-              <div className="dash"></div>
-            </div>
-            <br />
-            <p>
-              <span className="font-weight-bold pr-2">AGE:</span> 25{" "}
-            </p>
-            <p>
-              {" "}
-              <span className="font-weight-bold pr-2">CONTACT:</span> 9582347770{" "}
-            </p>
-            <p>
-              <span className="font-weight-bold pr-2">EMAIL:</span> vanshkapoorvk7@gmail.com{" "}
-            </p>
-            <p>
-              <span className="font-weight-bold pr-2"> ADDRESS:</span>Gurgaon, sec-49{" "}
-            </p>
-          </p>
-        </div>  */}
         <div className="col-lg-12">
           <p className="aboutpara animateShow">
             <span className="font-weight-bold secondary-text" style={{ fontSize: "2rem" }}>
@@ -75,16 +49,16 @@ export const Aboutme = () => {
             </span>{" "}
             <br />
             <br />
-            Hii! I'm currently working as an Application Developer Consultant at <span className="primary-text">Thoughtworks</span> where I'm working with some of the great minds following
-            extensive coding practices to build production ready applications and processes.
-            <br/>
-            <br />
-            I have done my Bachelor in Computer Science and Engineering from <span className="primary-text">Bharati Vidyapeeth IPU</span>.
-            <br />
-            <br />
-            I have diverse experience in multiple startups across diverse sectors with proficiency in the end-to-end development,
-            Backend in Nodejs and seamless UI/UX in ReactJs and React Native. Following the best software development practices like TDD, DDD, clean coding and always up for more challenging opportunities.
-          </p>
+            Hello! I am currently working as an Application Developer Consultant at <span className="primary-text">Thoughtworks</span>, collaborating with exceptional professionals to implement rigorous coding practices for the development of production-ready applications and processes.
+<br />
+<br />
+<br />
+            I hold a Bachelor's degree in Computer Science and Engineering from <span className="primary-text">Bharati Vidyapeeth IPU</span>.
+<br />
+<br />
+<br />
+            My professional journey includes diverse experiences in various startups across different sectors. I specialize in end-to-end development, with expertise in Node.js for backend and creating seamless UI/UX experiences using React.js and React Native. My approach is rooted in best software development practices such as TDD, DDD, and clean coding. I am always eager to take on more challenging opportunities.
+            </p>
           {/* <div
             className="mt-0 pt-4 pl-2 d-flex animateShow"
             style={{ position: "relative", top: "18px", flexWrap: "wrap" }}
