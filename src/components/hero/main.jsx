@@ -23,7 +23,7 @@ const Hero = (props) => {
                 A Full Stack Developer | Programmer
               </h4>
               <button className="mt-2 mb-2 pl-4 pr-4 downloadBtn animateShow" style={{ fontSize: "1.2rem", backgroundColor: "antiquewhite" }}>
-                <a href={require("../../Vansh-Resume-Dev.pdf")} download="CV" style={{ color: "black", textDecoration: "none" }}>
+                <a href={require("../../Vansh_Kapoor_Developer.pdf")} download="CV" style={{ color: "black", textDecoration: "none" }}>
                   Download Resume
                 </a>
               </button>
