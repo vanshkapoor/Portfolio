@@ -28,20 +28,19 @@ const Hero = (props) => {
                 </a>
               </button>
               <div className="d-flex pt-2">
-                <a href="https://twitter.com/vansh_Kapoor_" className="social-icons animateShow showOnMobile" target="_blank">
+                <a href="https://twitter.com/vansh_Kapoor_" className="social-icons primary-text animateShow showOnMobile" target="_blank">
                   <i className="fab fa-twitter fontsz-15" />
                 </a>
-                <a href="https://github.com/vanshkapoor" target="_blank" className="social-icons animateShow showOnMobile">
+                <a href="https://github.com/vanshkapoor" target="_blank" className="social-icons primary-text animateShow showOnMobile">
                   <i className="fab fa-github pl-4 fontsz-15" />
                 </a>
-                <a
-                  href="https://www.linkedin.com/in/vansh-kapoor-62a938169/"
+                <a href="https://www.linkedin.com/in/vansh-kapoor-62a938169/"
                   target="_blank"
-                  className="social-icons animateShow showOnMobile"
+                  className="social-icons primary-text animateShow showOnMobile"
                 >
                   <i className="fab fa-linkedin pl-4 fontsz-15" />
                 </a>
-                <a href="mailto:vanshkapoorvk7@gmail.com?subject=To Hire" className="social-icons animateShow showOnMobile">
+                <a href="mailto:vanshkapoorvk7@gmail.com?subject=To Hire" className="social-icons primary-text animateShow showOnMobile">
                   <i class="fas fa-envelope pl-4 fontsz-15"></i>
                 </a>
               </div>

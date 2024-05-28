@@ -46,14 +46,14 @@
 
 .downloadBtn:hover{
   transition: 0.3s;
-  box-shadow: 2px 2px 0px 0px black;
+  background: var(--text-primary);
 }
 .social-icons{
-  color: grey;
+  color: var(--text-primary) !important;
 }
 .social-icons:hover{
   transition: 0.3s;
-  color: var(--text-secondary);
+  color: var(--text-primary);
 }
 
 .boxesimg2 {
@@ -111,12 +111,12 @@
   }
 }
 
-.animateShow {
+/* .animateShow {
   opacity: 0;
   animation: FadeIn 1s ease-in-out forwards;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-}
+} */
 
 @keyframes FadeIn {
   0% {

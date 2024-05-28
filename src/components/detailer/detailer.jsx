@@ -59,30 +59,6 @@ export const Aboutme = () => {
 <br />
             My professional journey includes diverse experiences in various startups across different sectors. I specialize in end-to-end development, with expertise in Node.js for backend and creating seamless UI/UX experiences using React.js and React Native. My approach is rooted in best software development practices such as TDD, DDD, and clean coding. I am always eager to take on more challenging opportunities.
             </p>
-          {/* <div
-            className="mt-0 pt-4 pl-2 d-flex animateShow"
-            style={{ position: "relative", top: "18px", flexWrap: "wrap" }}
-          >
-            <p className="skills mr-2">Competitive coding</p>
-            <p className="skills mr-2">Data structures</p>
-            <p className="skills mr-2">Javascript</p>
-            <p className="skills mr-2">ReactJS</p>
-            <p className="skills mr-2">NodeJS</p>
-            <p className="skills mr-2">MySQL</p>
-            <p className="skills mr-2">MongoDB</p>
-            <p className="skills mr-2">Appscripts</p>
-            <p className="skills mr-2">Github</p>
-            <p className="skills mr-2">Python</p>
-            <p className="skills mr-2">Machine Learning</p>
-            <p className="skills mr-2">Sklearn</p>
-            <p className="skills mr-2">GCP</p>
-            <p className="skills mr-2">DNS</p>
-            <p className="skills mr-2">Flutter UI</p>
-            <p className="skills mr-2">UI/UX</p>
-            <p className="skills mr-2">Decentralised Apps</p>
-            <p className="skills mr-2">O.S basics</p>
-            <p className="skills mr-2">UI/UX</p>
-          </div> */}
         </div>
       </div>
     </div>

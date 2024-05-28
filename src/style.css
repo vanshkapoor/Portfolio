@@ -1,0 +1,318 @@
+.gradientbg{
+    z-index: -1;
+    background-image: linear-gradient(145deg, var(--background-secondary) -10%,rgba(0, 0, 0, 0) 40%);
+}
+.hero-info{
+    text-align: center;
+    padding-top: 4rem;
+    height: 100vh;
+}
+
+.hero-skills{
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.hey{
+    margin-bottom: 0px;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #f5f5f5cf;
+    opacity: 0;
+    animation: fadein 2s forwards;
+    animation-delay: 2s;
+}
+
+.name{
+    font-size: 24px;
+    margin-bottom: 0px;
+    opacity: 0;
+    animation: fadein 2s forwards;
+    animation-delay: 2.5s;
+}
+
+.hero-skills{
+    margin-bottom: 0px;
+}
+
+.description {
+    margin-top: -8px;
+    padding-top: 0px;
+    font-size: 26px;
+    word-spacing: 20px;
+    letter-spacing: 2px;
+    color: #cccccc;
+    opacity: 0;
+    animation: fadein 6s forwards;
+    animation-delay: 3.5s;
+}
+
+.resumeBtn{
+    font-size: 1.2rem;
+    background-color: #3535358c;
+    border-radius: 12px;
+    border-width: 0px;
+    color: white;
+    opacity: 0;
+    animation: fadein 2s forwards;
+    animation-delay: 3.5s;
+}
+
+.animateShow{
+    opacity: 0;
+    animation: fadein 2s forwards;
+    animation-delay: 4s;
+    color: #a2a2a2 !important;
+}
+
+.about{
+    z-index: -1;
+    animation: aboutanimate linear;
+    animation-timeline: scroll();
+    animation-range-end: exit-500px;
+}
+
+@keyframes aboutanimate {
+    0% {
+        opacity: 0;
+        background-color: "black";
+    }
+    60% {
+        opacity: 1;
+        background-color: var(--background-secondary);
+    }
+    100% {
+        opacity: 1;
+        background-color: var(--background-secondary);
+        /* background-image: linear-gradient(black, var(--background-secondary)); */
+    }
+}
+
+.downloadBtn:hover{
+  transition: 0.3s;
+  background: var(--background-secondary);
+}
+
+.project {
+    background-image: linear-gradient(var(--background-secondary), black);
+}
+
+
+.box {
+    margin: auto;
+    position: relative;
+    top: -200px;
+    animation: boxanimate linear;
+    animation-timeline: scroll();
+    z-index: -1;
+    animation-range-end: exit;
+}
+
+.downarrow{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.arrowopacity{
+    animation: arrowfade linear;
+    animation-timeline: scroll();
+    opacity: 1;
+}
+
+@keyframes arrowfade {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes boxanimate {
+    0% { 
+        width: 50px;
+        height: 50px;
+        top: -200px;
+        border-radius: 50px;
+        opacity: 1;
+        /* background-image: linear-gradient(black, var(--text-primary)); */
+        background-color: rgb(39, 39, 39);
+    }
+    50% {
+        width: 100%;
+        height: 400px;
+        top: 300px;
+        border-radius: 0px;
+        opacity: 0;
+        /* background-image: linear-gradient(black, var(--background-secondary)); */
+        background-color: rgba(2, 2, 2, 0.342);
+    }
+    100% {
+        width: 100%;
+        height: 800px;
+        top: 400px;
+        border-radius: 0px;
+        opacity: 0;
+        /* background-image: linear-gradient(black, var(--background-secondary)); */
+        background-color: rgba(2, 2, 2, 0);
+    }
+}
+
+.skill-set{
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-right: 6px;
+    margin-bottom: 12px;
+    background: black;
+    padding-top: 5px;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    transition: 1s;
+}
+.visibleskill{
+    opacity: 1;
+}
+.hideskill{
+    animation: hideit 0.8s forwards;
+}
+.skillhead{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.active-skill{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.inactive-skill{
+    opacity: 0.8;
+}
+.skillarrowshow {
+    position: relative;
+    opacity: 0;
+    animation: translatearrow 0.8s forwards;
+}
+.skillarrowhide {
+    opacity: 0;
+}
+@keyframes translatearrow {
+    from {
+        opacity: 0;
+        left: 0px;
+    }
+    to {
+        opacity: 1;
+        left: 10px;
+    }
+}
+
+@keyframes hideit {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.4;
+    }
+}
+
+.container {
+    overflow: hidden;
+}
+
+.reveal-text {
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--text-primary);
+    clip-path: inset(100% 0 0 0);
+    animation: reveal 2s forwards;
+    animation-delay: 3s;
+}
+
+@keyframes reveal {
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+@keyframes fadein {
+    to {
+        opacity: 1;
+    }
+}
+
+.projectCards{
+    background: rgb(0 0 0 / 55%);
+    backdrop-filter: blur(4px);
+    padding: 20px;
+    border-radius: 10px;
+    transition: 3s;
+    position: relative;
+}
+
+.projectCards:hover{
+    cursor: pointer;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(9deg, #3800b7, transparent);
+}
+
+
+.project-skill{
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-right: 3px;
+  background: #23026f;
+  border-radius: 5px;
+  font-size: 15px;
+  padding-top: 2px;
+  color: #f9f9f9e3;
+}
+
+.project-head{
+    font-weight: bold;
+    font-size: 18px;
+    color: #f9f9f9e3;
+}
+
+.project-desc{
+  color: #f9f9f9d9;
+}
+
+.projectcard-link {
+    width: fit-content;
+    border-radius: 6px;
+    font-size: 13px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    border: 2px solid var(--background-secondary);
+    color: rgba(255, 255, 255, 0.682);
+}
+
+.siteloader{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 9999;
+    background: #6d0cbc;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    clip-path: circle(200% at 0% 0%);
+    animation: clipPathAnimate 1.5s forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes clipPathAnimate {
+    from {
+        clip-path: circle(200% at 0% 0%);
+    }
+    to {
+        clip-path: circle(0% at 0% 0%);
+    }
+}

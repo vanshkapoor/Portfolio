@@ -2,8 +2,22 @@ html,
 body {
   height: 100%;
   margin: 0;
-  font-family: "Roboto Mono", monospace;
-  /* overflow-x: hidden; */
+  font-family: "Montserrat";
+  /* overflow-y: hidden; */
+  /* animation: scrollanimate 1.5s forwards; */
+  /* animation-delay: 1s; */
+}
+
+@keyframes scrollanimate {
+    0% {
+        overflow-y: hidden;
+    }
+    99% {
+        overflow-y: hidden;
+    }
+    100% {
+        overflow-y: auto;
+    }
 }
 
 html {
@@ -110,4 +124,32 @@ body{
   .showOnDesktop{
     display: block;
   }
+}
+
+.download-side-popup{
+    position: fixed;
+    bottom: 48px;
+    right: -500px;
+    background: #6540bb;
+    border-radius: 12px;
+    padding: 8px;
+    z-index: 99;
+}
+
+@keyframes slideInFromRight {
+  from {
+    right: -500px;
+  }
+  to {
+    right: 30px;
+    /* transform: translateX(0); */
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  animation: slideInFromRight 0.5s ease-out forwards;
 }

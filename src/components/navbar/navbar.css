@@ -1,0 +1,23 @@
+.navbar {
+    justify-content: space-between;
+    padding-top: 25px;   
+}
+
+.name-header {
+    font-size: 1.3rem;
+    font-weight: 700;
+    background: rgba(64, 0, 184, 0.507);
+    backdrop-filter: blur(4px);
+    padding: 2px 10px 2px 10px;
+    border-radius: 6px;
+    display: flex;
+    cursor: pointer;
+}
+.fullname{
+    transition: 0.4s;
+    display: none;
+}
+
+.name-header:hover .fullname{
+    display: block;
+}
